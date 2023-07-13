@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Conversor De Moedas</title>
+    
+</head>
+
+
+<body>
+
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container-top">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://br.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Monitore todos os mercados no TradingView</span></a></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+    {
+    "symbols"; [
+      {
+        "proName": "FOREXCOM:SPXUSD",
+        "title": "S&P 500"
+      },
+      {
+        "proName": "FOREXCOM:NSXUSD",
+        "title": "US 100"
+      },
+      {
+        "proName": "FX_IDC:EURUSD",
+        "title": "EUR/USD"
+      },
+      {
+        "proName": "BITSTAMP:BTCUSD",
+        "title": "Bitcoin"
+      },
+      {
+        "proName": "BITSTAMP:ETHUSD",
+        "title": "Ethereum"
+      },
+      {
+        "description": "BTC/BRL",
+        "proName": "BINANCE:BTCBRL"
+      },
+      {
+        "description": "USD/BRL",
+        "proName": "FX_IDC:USDBRL"
+      },
+      {
+        "description": "BTC/USDT",
+        "proName": "BINANCE:BTCUSDT"
+      },
+      {
+        "description": "38LT",
+        "proName": "LSE:38LT"
+      },
+      {
+        "description": "USD/JPY",
+        "proName": "FX:USDJPY"
+      },
+      {
+        "description": "GBP/USD",
+        "proName": "OANDA:GBPUSD"
+      }
+    ],
+    "showSymbolLogo"; true,
+    "colorTheme"; "light",
+    "isTransparent"; false,
+    "displayMode"; "adaptive",
+    "locale"; "br"
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+
+
+    <h1>CONVERSOR DE MOEDAS</h1>
+    <h2>Esse <span class="text-top">Conversor De Moedas</span> Permite Que Você Saiba O Valor De Cada Moeda.</h2>
+
+    <section class="container-1">
+        <label>
+            Escolha a Moeda
+            <select class="select-currency">
+                <option value="real">R$ Real Brasileiro</option>
+                <option value="euro">€ Euro</option>
+                <option value="dolar">US$ Dólar Americano</option>
+                <option value="bitcoin">BTC Bitcoin</option>
+                <option value="libra">£ Libra</option>
+            </select>
+        </label>
+
+        <label>
+            Valor
+            <input class="input-currency" placeholder="10.000,00">
+        </label>
+
+        <label>
+            Converter Para
+            <select class="currency-select">
+                <option value="dolar">US$ Dólar Americano</option>
+                <option value="euro">€ Euro</option>
+                <option value="real">R$ Real Brasileiro</option>
+                <option value="bitcoin">BTC Bitcoin</option>
+                <option value="libra">£ Libra</option>
+            </select>
+        </label>
+
+    </section>
+
+    <br>
+
+    <button class="convert-button">Clique Aqui Para Converter</button>
+
+    <section class="container-2">
+        <div class="currency-box">
+            <img class="img-money" src="./assets/real.png" alt="moeda-real">
+            <p class="currency" id="name-currency">Real</p>
+            <p class="currency-value-to-convert">R$ 0,00</p>
+        </div>
+
+        <img class="seta" src="./assets/set.png" alt="seta">
+
+        <div class="currency-box">
+            <img class="currency-img" src="./assets/dolar.png" alt="moeda-americana">
+            <p class="currency" id="currency-name">Dólar americano</p>
+            <p class="currency-value">US$ 0,00</p>
+        </div>
+
+    </section>
+
+    <div class="text-grafic">
+      <h2>Dados de Mercado</h2>
+        <p>Tenha uma visão geral do desempenho dos <span class="text">mercados globais,</span> incluindo valores de Variação, Abertura, Máximas, Mínimos e Fechamento para os instrumentos financeiros selecionados.</p>
+    </div>
+
+
+    <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://br.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Monitore todos os mercados no TradingView</span></a></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
+    {
+    "width"; "100%",
+    "height"; "100%",
+    "symbolsGroups"; [
+      {
+        "name": "Índices",
+        "originalName": "Indices",
+        "symbols": [
+          {
+            "name": "FOREXCOM:SPXUSD",
+            "displayName": "S&P 500"
+          },
+          {
+            "name": "FOREXCOM:NSXUSD",
+            "displayName": "US 100"
+          },
+          {
+            "name": "FOREXCOM:DJI",
+            "displayName": "Dow 30"
+          },
+          {
+            "name": "INDEX:NKY",
+            "displayName": "Nikkei 225"
+          },
+          {
+            "name": "INDEX:DEU40",
+            "displayName": "DAX Index"
+          },
+          {
+            "name": "FOREXCOM:UKXGBP",
+            "displayName": "UK 100"
+          },
+          {
+            "name": "FX_IDC:USDBRL",
+            "displayName": "USD/BRL"
+          },
+          {
+            "name": "BINANCE:BTCBRL",
+            "displayName": "BTC/BRL"
+          },
+          {
+            "name": "OANDA:EURUSD",
+            "displayName": "EUR/USD"
+          },
+          {
+            "name": "BMFBOVESPA:PETR4",
+            "displayName": "PETR4"
+          }
+        ]
+      },
+      {
+        "name": "Futuros",
+        "originalName": "Futures",
+        "symbols": [
+          {
+            "name": "CME_MINI:ES1!",
+            "displayName": "S&P 500"
+          },
+          {
+            "name": "CME:6E1!",
+            "displayName": "Euro"
+          },
+          {
+            "name": "COMEX:GC1!",
+            "displayName": "Gold"
+          },
+          {
+            "name": "NYMEX:CL1!",
+            "displayName": "Crude Oil"
+          },
+          {
+            "name": "NYMEX:NG1!",
+            "displayName": "Natural Gas"
+          },
+          {
+            "name": "CBOT:ZC1!",
+            "displayName": "Corn"
+          }
+        ]
+      },
+      {
+        "name": "Títulos",
+        "originalName": "Bonds",
+        "symbols": [
+          {
+            "name": "CBOT:ZB1!",
+            "displayName": "T-Bond"
+          },
+          {
+            "name": "CBOT:UB1!",
+            "displayName": "Ultra T-Bond"
+          },
+          {
+            "name": "EUREX:FGBL1!",
+            "displayName": "Euro Bund"
+          },
+          {
+            "name": "EUREX:FBTP1!",
+            "displayName": "Euro BTP"
+          },
+          {
+            "name": "EUREX:FGBM1!",
+            "displayName": "Euro BOBL"
+          }
+        ]
+      },
+      {
+        "name": "Forex",
+        "originalName": "Forex",
+        "symbols": [
+          {
+            "name": "FX:EURUSD",
+            "displayName": "EUR/USD"
+          },
+          {
+            "name": "FX:GBPUSD",
+            "displayName": "GBP/USD"
+          },
+          {
+            "name": "FX:USDJPY",
+            "displayName": "USD/JPY"
+          },
+          {
+            "name": "FX:USDCHF",
+            "displayName": "USD/CHF"
+          },
+          {
+            "name": "FX:AUDUSD",
+            "displayName": "AUD/USD"
+          },
+          {
+            "name": "FX:USDCAD",
+            "displayName": "USD/CAD"
+          }
+        ]
+      }
+    ],
+    "showSymbolLogo"; true,
+    "colorTheme"; "light",
+    "isTransparent"; false,
+    "locale"; "br"
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+
+ 
+
+
+
+</body>
+<script src="./scripts.js"></script>
+
+</html>
